@@ -7,7 +7,6 @@ author:     Uarealoser
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - Golang
     - rpc
 ---
 
@@ -179,3 +178,4 @@ func main() {
 ```
 
 在新的RPC服务端实现中，我们用RegisterHelloService函数来注册函数，这样不仅可以避免命名服务名称的工作，同时也保证了传入的服务对象满足了RPC接口的定义。最后我们新的服务改为支持多个TCP链接，然后为每个TCP链接提供RPC服务。
+
