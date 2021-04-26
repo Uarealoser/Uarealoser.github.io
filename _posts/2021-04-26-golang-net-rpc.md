@@ -242,14 +242,12 @@ func main() {
 
 先手工调用net.Dial函数建立TCP链接，然后基于该链接建立针对客户端的json编解码器。
 在确保客户端可以正常调用RPC服务的方法之后，我们用一个普通的TCP服务代替Go语言版本的RPC服务，这样可以查看客户端调用时发送的数据格式。比如通过nc命令nc -l 1234在同样的端口启动一个TCP服务。然后再次执行一次RPC调用将会发现nc输出了以下的信息：
-
 ```shell script
 {"method":"HelloService.Hello","params":["hello"],"id":0}
 ```
 
 这是一个json编码的数据，其中method部分对应要调用的rpc服务和方法组合成的名字，params部分的第一个元素为参数，id是由调用端维护的一个唯一的调用编号。
 请求的json数据对象在内部对应两个结构体：客户端是clientRequest，服务端是serverRequest。clientRequest和serverRequest结构体的内容基本是一致的：
-
 ```go
 type clientRequest struct {
     Method string         `json:"method"`
