@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      golang net/rpc 2
-subtitle:   golang net/rpc 2
+title:      golang net/rpc 基础第二篇
+subtitle:   golang 官方rpc 介绍
 date:       2021-04-26
 author:     Uarealoser
 header-img: img/post-bg-ios9-web.jpg
