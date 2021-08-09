@@ -64,7 +64,7 @@ lrwxrwxrwx 1 root root 0 Aug  9 21:51 /proc/17880/ns/uts -> uts:[4026531838] // 
 
 可以看到，～/uts的inode和链接文件的inode number是一样的，即它们是同一个文件。
 
-> mount --bind t1 t2 ：将2个目录或文件链接起来，将前一个目录t1挂载到后一个目录t2上，所有对后一个目录的访问都是对前一个目录的访问。（可以参考[linux 命令](/_posts/2021-08-09-linux_exec.md)）
+> mount --bind t1 t2 ：将2个目录或文件链接起来，将前一个目录t1挂载到后一个目录t2上，所有对后一个目录的访问都是对前一个目录的访问。可以参考[linux 命令](https://uarealoser.cn/2021/08/09/linux_exec/)
 
 Linux提供了如下几种Namespace:
 
