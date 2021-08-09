@@ -23,7 +23,7 @@ Linux 的namespace 是Linux提供的一种内核级别的环境隔离方法。�
 从内核3.8开始，/proc/[pid]/ns目录下就会包含进程所属的namespace信息:
 
 ```
-root@iZ2ynfh5pnexr5Z:/proc# ll /proc/$$/ns
+root@iZ2ynfh5pnexr5Z:/proc# ll /proc/$$/ns ## $$是当前进程id号
 total 0
 dr-x--x--x 2 root root 0 Aug  9 21:51 ./
 dr-xr-xr-x 9 root root 0 Aug  9 21:49 ../
