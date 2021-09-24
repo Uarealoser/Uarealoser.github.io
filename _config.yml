@@ -98,6 +98,10 @@ service-worker: true
 
 # Friends
 friends: [
+      {
+          title: "travelling",
+          href: "https://travellings.link/"
+      }
 #    {
 #        title: "WY",
 #        href: "http://zhengwuyang.com"
